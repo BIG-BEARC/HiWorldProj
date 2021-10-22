@@ -1,0 +1,9 @@
+include ':common'
+include ':app'
+rootProject.name = "HiWorldProj"
+
+include ':cx-library'
+project(':cx-library').projectDir = "../cx-library/hilibrary" as File
+
+include ':cx-ui'
+project(':cx-ui').projectDir = "../cx-ui/hi-ui" as File
